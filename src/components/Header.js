@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 function Header() {
@@ -7,11 +7,46 @@ function Header() {
     <header>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/game">Game</Link></li>
-          <li><Link to="/quiz">Quiz</Link></li>
-          <li><Link to="/sejarah">Sejarah</Link></li>
-
+          <li>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => (isActive ? 'active-link' : '')}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/game" 
+              className={({ isActive }) => (isActive ? 'active-link' : '')}
+            >
+              Game
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/quiz" 
+              className={({ isActive }) => (isActive ? 'active-link' : '')}
+            >
+              Quiz
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/sejarah" 
+              className={({ isActive }) => (isActive ? 'active-link' : '')}
+            >
+              Sejarah
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/guide" 
+              className={({ isActive }) => (isActive ? 'active-link' : '')}
+            >
+              Guide
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,0 +1,40 @@
+.guide-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Warna latar belakang gelap */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Bayangan yang lebih gelap */
+    color: #eaeaea; /* Warna teks yang lebih terang untuk kontras */
+}
+
+.guide-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #dc3545; /* Merah untuk semangat Indonesia */
+}
+
+.guide-container section {
+    margin-bottom: 30px;
+}
+
+.guide-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffc107; /* Warna kuning terang untuk judul bagian */
+}
+
+.guide-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #eaeaea; /* Warna teks yang lebih terang */
+}
+
+.guide-container a {
+    color: #dc3545; /* Warna merah untuk tautan */
+    text-decoration: none;
+}
+
+.guide-container a:hover {
+    text-decoration: underline;
+}
