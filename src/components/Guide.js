@@ -66,7 +66,7 @@ function Guide() {
           Fitur Game <i className={`bi ${expandedSections['Game'] ? 'bi-chevron-up' : 'bi-chevron-down'}`} />
         </h2>
         {expandedSections['Game'] && (
-          <p>Bermainlah dalam game perang yang mengambil latar belakang sejarah perjuangan Indonesia. Rasakan adrenalin dari pertempuran bersejarah di Indonesia.</p>
+          <p>Bermainlah dalam game mencari poin pancasila.</p>
         )}
       </section>
 
