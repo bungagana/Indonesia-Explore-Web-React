@@ -18,7 +18,7 @@
 .question-count {
     margin-bottom: 15px;
     font-size: 20px;
-    color: #ff5722;
+    color: #cc0000;
 }
 
 .question-text {
@@ -36,14 +36,14 @@
     font-size: 20px;
     cursor: pointer;
     border: none;
-    background-color: #ff5722;
+    background-color: #cc0000;
     color: white;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .answer-section button:hover {
-    background-color: #e64a19;
+    background-color: #940a0a;
     transform: translateY(-3px);
 }
 
@@ -66,7 +66,7 @@
 .result-illustration h3 {
     margin-top: 25px;
     font-size: 32px;
-    color: #ff5722;
+    color: #cc0000;
 }
 
 /* Music Button */

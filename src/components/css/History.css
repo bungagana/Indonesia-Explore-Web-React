@@ -1,15 +1,15 @@
 .education-section {
-    background-color: #1c1c1c; /* Dark background */
+    background-color: #1c1c1c; 
     padding: 60px 20px;
     border-radius: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); 
     margin: 20px auto;
     max-width: 1200px;
-    color: #f0f0f0; /* Light text color */
+    color: #f0f0f0; 
 }
 
 h1 {
-    color: #e74c3c; /* Red, symbolizing the Indonesian flag */
+    color: #cc0000; 
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5rem;
@@ -24,10 +24,10 @@ h1 {
 .timeline-event {
     display: flex;
     align-items: center;
-    border-left: 4px solid #e74c3c; /* Red line on the left */
+    border-left: 4px solid #cc0000; 
     padding-left: 20px;
     position: relative;
-    background-color: #2b2b2b; /* Darker background for events */
+    background-color: #2b2b2b; 
     border-radius: 10px;
     padding: 20px;
 }
@@ -39,7 +39,7 @@ h1 {
     top: 20px;
     width: 14px;
     height: 14px;
-    background-color: #e74c3c; /* Red dot */
+    background-color: #cc0000; 
     border-radius: 50%;
 }
 
@@ -53,23 +53,23 @@ h1 {
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #f0f0f0; /* Light border to make images stand out */
+    border: 2px solid #f0f0f0;
 }
 
 .timeline-event-text h2 {
     margin: 0;
     font-size: 1.2rem;
-    color: #f0f0f0; /* Light gray for dates */
+    color: #f0f0f0; 
 }
 
 .timeline-event-text h3 {
     margin: 5px 0;
     font-size: 1.5rem;
-    color: #ffffff; /* White for titles */
+    color: #ffffff;
 }
 
 .timeline-event-text p {
-    color: #dddddd; /* Light gray for descriptions */
+    color: #dddddd; 
     line-height: 1.6;
 }
 
@@ -77,15 +77,15 @@ h1 {
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
-    background-color: #e74c3c; /* Red background */
+    background-color: #cc0000; 
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px; 
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
 }
 
 .load-more:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }

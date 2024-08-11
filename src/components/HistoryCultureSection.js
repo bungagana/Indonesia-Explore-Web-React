@@ -50,7 +50,7 @@ const historyTimeline = [
         description: 'Setelah proklamasi, Indonesia mengalami masa revolusi melawan Belanda yang berusaha kembali menjajah. Revolusi ini berlangsung hingga Belanda mengakui kemerdekaan Indonesia pada 27 Desember 1949.',
         image: 'https://th.bing.com/th/id/OIP.KQc0xcdiTN5sc7-VpPcduAHaEK?rs=1&pid=ImgDetMain'
     }
-    // Add more events as needed
+
 ];
 
 const HistoryCultureSection = () => {
@@ -61,7 +61,7 @@ const HistoryCultureSection = () => {
     };
 
     return (
-        <section className="education-section">
+        <section id="history" className="education-section">
             <div className="container">
                 <h1>Alur Kemerdekaan Indonesia</h1>
                 <div className="timeline">
@@ -79,7 +79,7 @@ const HistoryCultureSection = () => {
                     ))}
                 </div>
                 <button className="load-more" onClick={handleToggle}>
-                    {isExpanded ? 'Show Less' : 'Load More'}
+                    {isExpanded ? 'Sembunyikan' : 'Lihat'}
                 </button>
             </div>
         </section>

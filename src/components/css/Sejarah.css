@@ -1,77 +1,86 @@
-/* Dark Theme for Sejarah */
+/* src/pages/css/Sejarah.css */
 .sejarah-container {
-    padding: 40px;
-    background-color: #1a1a1a; /* Dark background */
-    color: #eaeaea; /* Light text color */
+    padding: 20px;
+    background-color: #181818; 
+    color: #eaeaea; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cc0000; 
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #292929; 
+    color: #eaeaea;
+    border: 1px solid #444444; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #444444; 
+}
+
+.filter-button.active {
+    background-color: #cc0000; 
+    color: #fff;
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    column-gap: 16px; /* Adjusted gap for better layout */
-    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
 }
 
 .card-link-wrapper {
     text-decoration: none;
+    color: inherit;
 }
 
 .card {
-    border: none;
-    border-radius: 8px;
-    width: 250px;
-    height: 300px;
+    background: #2c2c2c; 
+    border: 1px solid #444; 
+    border-radius: 10px;
     overflow: hidden;
-    background-color: #292929; /* Darker card background */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow for dark theme */
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+    transform: scale(1.05); 
+    background-color: #3a3a3a;
 }
 
 .card-image {
     width: 100%;
-    height: 45%;
+    height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #444444; /* Subtle divider color */
-    padding-bottom: 0px;
 }
 
 .card-content {
-    padding: 10px;
-    text-align: left;
-    height: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    padding: 15px;
 }
 
 .card-content h2 {
-    font-size: 1rem;
-    margin-top: 8px;
-    margin-bottom: 4px;
-    color: #ffcc00; /* Accent color inspired by Indonesian elements */
-    line-height: 1.2;
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #eaeaea; 
 }
 
 .card-content p {
-    font-size: 0.85rem;
-    color: #b3b3b3; /* Lighter gray for text */
-    margin-bottom: 4px;
-    line-height: 1.2;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 4.8em;
-}
-
-/* Additional Styling for Indonesian Spirit */
-.card-content h2::after {
-    content: ' 🇮🇩'; /* Adding Indonesian flag emoji */
+    font-size: 14px;
+    color: #ddd; 
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/corousel.css'; // Import the CSS file for styling
+import './css/corousel.css';
 
 function StoryCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,8 +23,12 @@ function StoryCarousel() {
         </div>
       </div>
       <div className="carousel-nav">
-        <button disabled={currentIndex === 0} onClick={() => scrollCarousel(-1)}>Prev</button>
-        <button disabled={currentIndex === items.length - 1} onClick={() => scrollCarousel(1)}>Next</button>
+        <button className="arrow-button" disabled={currentIndex === 0} onClick={() => scrollCarousel(-1)}>
+          <i className="bi bi-arrow-left"></i>
+        </button>
+        <button className="arrow-button" disabled={currentIndex === items.length - 1} onClick={() => scrollCarousel(1)}>
+          <i className="bi bi-arrow-right"></i>
+        </button>
       </div>
     </section>
   );

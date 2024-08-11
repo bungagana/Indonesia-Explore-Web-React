@@ -32,7 +32,6 @@ const quizQuestions = [
         options: ['Berani', 'Suci', 'Damai', 'Merdeka'],
         correctAnswer: 'Berani'
     }
-    // Add more questions as needed
 ];
 
 const Quiz = () => {
@@ -61,10 +60,10 @@ const Quiz = () => {
                     {score >= 4 ? (
                         <div className="result-illustration">
                             <img
-                                src="https://example.com/kamu-sangat-indonesia-sekali.jpg"
+                                src="https://i.pinimg.com/originals/33/ef/b9/33efb9d6f4bae437f584876e35469403.png"
                                 alt="KAMU SANGAT INDONESIA SEKALI"
                             />
-                            <h3>KAMU SANGAT INDONESIA SEKALI</h3>
+                            <h3>MANTAP ANAK MUDA</h3>
                         </div>
                     ) : (
                         <h3>Terus belajar tentang Indonesia ya!</h3>

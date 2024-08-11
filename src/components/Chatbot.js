@@ -30,14 +30,14 @@ const SoekarndoBot = () => {
           {
             role: "user",
             parts: [
-              { text: "kamu ada Bot AI yang punya nama 'Soekarndo' yang akan menjawab dan memberita tau tentang sejarah indonesia dan budaya indonesia\n" },
+              { text: "Sipa Kamu?" },
             ],
           },
           {
             role: "model",
             parts: [
               {
-                text: "Wah, keren idemu! Aku bisa bantu untuk membuat \"Soekarndo\", Bot AI yang tahu banyak tentang sejarah dan budaya Indonesia. ...",
+                text: "Kamu adalah Saka Bot, Bot asistensi untuk menjelaskan tentang sejarah dan budaya Indonesia\n. Saka bot ini bisa mengerti semua bahasa daerah indonesia dan dapat merespon sesuai dengan bahasa daerah yang dikasih user",
               },
             ],
           },
@@ -52,17 +52,17 @@ const SoekarndoBot = () => {
         { role: "user", text: messageInput },
         { role: "bot", text: botMessage },
       ]);
-      setInput(""); // Clear the input field after sending the message
+      setInput(""); 
     } catch (error) {
       if (error.code === 429) {
         setMessages((prevMessages) => [
           ...prevMessages,
-          { role: "bot", text: "Quota exceeded. Please try again later." },
+          { role: "bot", text: "Maaf limit untuk bertanya." },
         ]);
       } else {
         setMessages((prevMessages) => [
           ...prevMessages,
-          { role: "bot", text: "An error occurred. Please try again." },
+          { role: "bot", text: "Ada kesalahan" },
         ]);
       }
     }
@@ -74,13 +74,13 @@ const SoekarndoBot = () => {
 
   const handleSendMessage = () => {
     if (input.trim() !== "") {
-      fetchData(input); // Send the message when the button is clicked
+      fetchData(input);
     }
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      handleSendMessage(); // Send the message when the Enter key is pressed
+      handleSendMessage(); 
     }
   };
 
@@ -106,7 +106,7 @@ const SoekarndoBot = () => {
         {isOpen && (
           <div className="chatbot-box">
             <div className="chatbot-header">
-              <h3>Soekarndo Bot</h3>
+              <h3>Saka Bot</h3>
               <button onClick={toggleChat} className="close-btn">✕</button>
             </div>
             <div className="chatbot-messages">
@@ -124,16 +124,16 @@ const SoekarndoBot = () => {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown} // Listen for the Enter key
-                placeholder="Type your message..."
+                onKeyDown={handleKeyDown} 
+                placeholder="Ketik disini"
               />
-              <button onClick={handleSendMessage}>Send</button>
+              <button onClick={handleSendMessage}>Kirim</button>
             </div>
           </div>
         )}
       </div>
       <button onClick={toggleChat} className="floating-button">
-        <i className="bi bi-chat-dots"></i> {/* Bootstrap chat icon */}
+        <i className="bi bi-chat-dots"></i> {}
       </button>
     </div>
   );

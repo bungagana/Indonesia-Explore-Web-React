@@ -1,12 +1,12 @@
 .article-detail-container {
     padding: 40px;
-    background-color: #1e1e1e; /* Latar belakang gelap */
-    color: #f0f0f0; /* Warna teks terang untuk kontras */
+    background-color: #1e1e1e; 
+    color: #f0f0f0; 
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 60px; /* Ruang untuk footer */
-    border-radius: 10px; /* Tambahkan sedikit border radius untuk estetika */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow untuk efek kedalaman */
+    margin-bottom: 120px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .article-image {
@@ -14,18 +14,18 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
-    border: 2px solid #dc3545; /* Border merah sebagai aksen */
+    border: 2px solid #cc0000; 
 }
 
 .article-detail-container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #dc3545; /* Warna merah untuk judul */
+    color: #cc0000; 
 }
 
 .article-detail-container p {
     font-size: 1rem;
-    color: #f0f0f0; /* Warna teks utama terang */
+    color: #f0f0f0;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -33,5 +33,5 @@
 .article-detail-container p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #dc3545; /* Warna merah untuk huruf pertama paragraf */
+    color:#cc0000; 
 }

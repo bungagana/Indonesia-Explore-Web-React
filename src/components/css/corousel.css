@@ -57,6 +57,6 @@
 }
 
 .carousel-nav button:disabled {
-  background-color: #7f8c8d; /* Abu-abu untuk tombol yang tidak aktif */
+  background-color: #7f8c8d; 
   cursor: not-allowed;
 }

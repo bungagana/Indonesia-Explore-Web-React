@@ -72,6 +72,7 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/sejarah" element={<Sejarah />} />
             <Route path="/sejarah/:slug" element={<ArticleDetail />} />
+            <Route path="/budaya/:slug" element={<ArticleDetail />} />
             <Route path="/guide" element={<Guide />} />
           </Routes>
         </main> 
