@@ -1,0 +1,59 @@
+/* StoryCarousel.css */
+#story {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #story h2 {
+    font-size: 2em;
+    color: #e74c3c; /* Merah */
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-item iframe {
+    border: none;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-nav {
+    margin-top: 20px;
+  }
+  
+  .carousel-nav button {
+    background-color: #3498db; /* Biru */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .carousel-nav button:hover {
+    background-color: #2980b9; /* Biru gelap */
+  }
+  
+  .carousel-nav button:disabled {
+    background-color: #bdc3c7; /* Gray */
+    cursor: not-allowed;
+  }
+  

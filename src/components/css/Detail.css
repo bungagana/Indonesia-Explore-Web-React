@@ -1,0 +1,26 @@
+/* src/pages/Detail.css */
+.article-detail-container {
+    padding: 40px;
+    background-color: #f7f7f7;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px; /* Ruang untuk footer */
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.article-detail-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.article-detail-container p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}

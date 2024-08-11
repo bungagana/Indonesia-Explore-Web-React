@@ -1,0 +1,21 @@
+/* src/components/css/Game.css */
+.game-container {
+    position: relative;
+    width: 800px; /* Width of the canvas */
+    height: 600px; /* Height of the canvas */
+    margin: 0 auto;
+  }
+  
+  canvas {
+    background-color: #f0f0f0; /* Light gray background for better visibility */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    margin-top: 20px; /* Adjust margin to ensure canvas is not covered */
+  }
+  

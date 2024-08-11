@@ -1,0 +1,71 @@
+.sejarah-container {
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: -2px; /* Mengatur jarak antar kartu secara horizontal */
+    row-gap: 16px; /* Mengatur jarak antar kartu secara vertikal */
+    justify-content: center;
+}
+
+
+.card-link-wrapper {
+    text-decoration: none;
+}
+
+.card {
+    border: none; /* Hapus border */
+    border-radius: 8px; 
+    width: 250px;
+    height: 300px; 
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk bayangan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+.card:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan yang lebih besar saat hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0px;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: left;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-content h2 {
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4.8em; 
+}
