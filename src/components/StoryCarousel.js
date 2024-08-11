@@ -6,7 +6,7 @@ function StoryCarousel() {
   const items = [
     "https://sketchfab.com/models/84f5b344957540a295743def72f1db66/embed",
     "https://sketchfab.com/3d-models/pahlawan-indonesia-5ab854a8e7604b7292951b38e1bb34d8/embed",
-    "https://sketchfab.com/3d-models/pahlawan-indonesia-5ab854a8e7604b7292951b38e1bb34d8/embed"
+    "https://sketchfab.com/3d-models/indonesia-folksloreroro-kuning-c083d4cde37e483cb4b2b1bfc058ee3d/embed"
   ];
 
   const scrollCarousel = (direction) => {

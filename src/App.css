@@ -130,7 +130,23 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  font-size: 1rem; 
 }
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 10px 5px; 
+    font-size: 0.8rem;  
+  }
+}
+
 
 /* Section Artikel */
 .sejarah-full-article {

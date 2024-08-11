@@ -17,10 +17,10 @@ function Header() {
           </li>
           <li>
             <NavLink 
-              to="/game" 
+              to="/sejarah" 
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              Game
+              Sejarah
             </NavLink>
           </li>
           <li>
@@ -33,10 +33,10 @@ function Header() {
           </li>
           <li>
             <NavLink 
-              to="/sejarah" 
+              to="/game" 
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              Sejarah
+              Game
             </NavLink>
           </li>
           <li>
