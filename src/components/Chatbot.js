@@ -78,6 +78,12 @@ const SoekarndoBot = () => {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSendMessage(); // Send the message when the Enter key is pressed
+    }
+  };
+
   const parseMessage = (text) => {
     const parts = text.split(/(\*.*?\*|_.*?_|\~.*?\~)/).map((part, index) => {
       if (part.startsWith('*') && part.endsWith('*')) {
@@ -118,6 +124,7 @@ const SoekarndoBot = () => {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown} // Listen for the Enter key
                 placeholder="Type your message..."
               />
               <button onClick={handleSendMessage}>Send</button>

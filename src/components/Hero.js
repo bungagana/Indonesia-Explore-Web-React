@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImage from '../assets/heroimage.png';
 import '../App.css';
 
 

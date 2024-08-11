@@ -1,20 +1,15 @@
-/* History.css */
 .education-section {
-    background-color: #ffffff;
+    background-color: #1c1c1c; /* Dark background */
     padding: 60px 20px;
     border-radius: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
     margin: 20px auto;
     max-width: 1200px;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    color: #f0f0f0; /* Light text color */
 }
 
 h1 {
-    color: #007BFF;
+    color: #e74c3c; /* Red, symbolizing the Indonesian flag */
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5rem;
@@ -29,19 +24,22 @@ h1 {
 .timeline-event {
     display: flex;
     align-items: center;
-    border-left: 4px solid #007BFF;
+    border-left: 4px solid #e74c3c; /* Red line on the left */
     padding-left: 20px;
     position: relative;
+    background-color: #2b2b2b; /* Darker background for events */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .timeline-event::before {
     content: '';
     position: absolute;
     left: -7px;
-    top: 0;
+    top: 20px;
     width: 14px;
     height: 14px;
-    background-color: #007BFF;
+    background-color: #e74c3c; /* Red dot */
     border-radius: 50%;
 }
 
@@ -55,26 +53,23 @@ h1 {
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.timeline-event-text {
-    max-width: 700px;
+    border: 2px solid #f0f0f0; /* Light border to make images stand out */
 }
 
 .timeline-event-text h2 {
     margin: 0;
     font-size: 1.2rem;
-    color: #555;
+    color: #f0f0f0; /* Light gray for dates */
 }
 
 .timeline-event-text h3 {
     margin: 5px 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff; /* White for titles */
 }
 
 .timeline-event-text p {
-    color: #666;
+    color: #dddddd; /* Light gray for descriptions */
     line-height: 1.6;
 }
 
@@ -82,7 +77,7 @@ h1 {
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #e74c3c; /* Red background */
     color: white;
     border: none;
     border-radius: 5px;
@@ -92,5 +87,5 @@ h1 {
 }
 
 .load-more:hover {
-    background-color: #0056b3;
+    background-color: #c0392b; /* Darker red on hover */
 }

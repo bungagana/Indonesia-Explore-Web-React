@@ -1,14 +1,16 @@
 .chatbot-container {
     position: fixed;
-    bottom: 80px; /* Increased space from the bottom to avoid footer overlap */
+    bottom: 80px;
     right: 20px;
-    width: 350px; /* Slightly increased width for better readability */
+    width: 360px;
     display: none;
     flex-direction: column;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Lebih gelap untuk tema malam */
+    border-radius: 16px;
     overflow: hidden;
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Latar belakang utama gelap */
 }
 
 .chatbot-container.open {
@@ -16,23 +18,28 @@
 }
 
 .chatbot-box {
-    background-color: white;
-    border-radius: 12px;
+    background-color: #1a1a1a;
+    border-radius: 16px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Mengatur konten chatbot dalam kolom */
+    height: 400px; /* Sesuaikan tinggi kontainer */
 }
 
 .chatbot-header {
-    background-color: #007BFF;
+    background-color: #d32f2f; /* Warna merah melambangkan semangat kemerdekaan */
     color: white;
-    padding: 15px; /* Increased padding for better spacing */
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #f5f5f5; /* Garis bawah putih */
 }
 
 .chatbot-header h3 {
     margin: 0;
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.4rem; /* Sedikit lebih besar */
+    color: #f5f5f5; /* Putih terang */
 }
 
 .close-btn {
@@ -45,85 +52,94 @@
 }
 
 .close-btn:hover {
-    transform: scale(1.2); /* Add a hover effect for better UX */
+    transform: scale(1.2);
 }
 
 .chatbot-messages {
-    height: 250px;
+    flex: 1; /* Mengisi ruang yang tersisa */
     overflow-y: auto;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #121212; /* Warna lebih gelap untuk kontras */
     scrollbar-width: thin;
+    color: #e0e0e0; /* Teks lebih terang */
+    display: flex;
+    flex-direction: column; /* Mengatur pesan dalam kolom vertikal */
 }
 
-.message p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-.user-message {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border-radius: 12px;
+.message {
     margin-bottom: 10px;
-    align-self: flex-end;
+}
+
+.user-message, .bot-message {
+    padding-bottom: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
     max-width: 80%;
     font-family: 'Arial', sans-serif;
     font-size: 14px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word; /* Memastikan teks panjang terbungkus ke baris berikutnya */
+    overflow-wrap: break-word; /* Memastikan kata-kata panjang terputus jika perlu */
 }
 
-/* Bot message styles */
+.user-message {
+    background-color: #d32f2f;
+    color: white;
+    align-self: flex-end; /* Aligns the user's message to the right */
+    text-align: right;
+}
+
 .bot-message {
-    background-color: #F1F1F1;
-    color: #333;
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    align-self: flex-start;
-    max-width: 80%;
-    font-family: 'Georgia', serif;
-    font-size: 15px;
+    background-color: #333333;
+    color: #f5f5f5;
+    align-self: flex-start; /* Aligns the bot's message to the left */
+    text-align: left;
     font-style: italic;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .chatbot-input {
     display: flex;
-    border-top: 1px solid #ddd;
-    background-color: #fff;
+    border-top: 1px solid #d32f2f;
+    background-color: #1a1a1a;
 }
 
 .chatbot-input input {
     flex: 1;
     border: none;
-    padding: 12px; /* Increased padding for better touch targets */
+    padding: 12px;
     outline: none;
-    border-radius: 0 0 0 12px;
-    font-size: 1rem; /* Adjusted font size */
+    border-radius: 0 0 0 16px;
+    font-size: 1rem;
+    background-color: #333333; /* Warna gelap */
+    color: #f5f5f5;
+}
+
+.chatbot-input input::placeholder {
+    color: #b0b0b0; /* Placeholder lebih terang */
 }
 
 .chatbot-input button {
     padding: 12px;
     border: none;
-    background-color: #007BFF;
+    background-color: #d32f2f; /* Warna merah untuk tombol */
     color: white;
     cursor: pointer;
-    border-radius: 0 0 12px 0;
-    font-size: 1rem; /* Adjusted font size */
+    border-radius: 0 0 16px 0;
+    font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
 }
 
 .chatbot-input button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #b71c1c; /* Merah lebih gelap saat hover */
 }
 
 .floating-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007BFF;
+    background-color: #d32f2f;
     color: white;
     border: none;
     border-radius: 50%;
@@ -134,16 +150,15 @@
     align-items: center;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out;
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000;
 }
 
 .floating-button:hover {
-    transform: scale(1.1); /* Add a hover effect for better UX */
+    transform: scale(1.1);
 }
 
 .floating-button i {
     margin: 0;
 }
-
