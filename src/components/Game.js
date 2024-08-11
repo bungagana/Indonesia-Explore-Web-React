@@ -4,7 +4,7 @@ import './css/Game.css'; // For styling
 const Game = () => {
     useEffect(() => {
         // Redirect to the external URL
-        window.location.href = 'https://app.netlify.com/sites/mellifluous-ganache-903128/';
+        window.location.href = 'https://chic-empanada-8387a6.netlify.app/';
     }, []);
 
     return null; // Optionally, you can display a loading message or spinner here
