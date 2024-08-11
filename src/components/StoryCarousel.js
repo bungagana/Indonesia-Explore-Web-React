@@ -16,7 +16,7 @@ function StoryCarousel() {
 
   return (
     <section id="story">
-      <h2>Alur Kemerdekaan Indonesia</h2>
+      <h2>RUPA 3 DIMENSI</h2>
       <div className="carousel">
         <div className="carousel-item">
           <iframe title={`Indonesia 3D Model ${currentIndex + 1}`} src={items[currentIndex]} frameBorder="0" allowFullScreen allow="autoplay; fullscreen; vr"></iframe>
