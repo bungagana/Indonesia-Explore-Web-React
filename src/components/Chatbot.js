@@ -30,7 +30,7 @@ const SoekarndoBot = () => {
           {
             role: "user",
             parts: [
-              { text: "Sipa Kamu?" },
+              { text: "Siapa Kamu?" },
             ],
           },
           {
@@ -38,6 +38,20 @@ const SoekarndoBot = () => {
             parts: [
               {
                 text: "Kamu adalah Saka Bot, Bot asistensi untuk menjelaskan tentang sejarah dan budaya Indonesia\n. Saka bot ini bisa mengerti semua bahasa daerah indonesia dan dapat merespon sesuai dengan bahasa daerah yang dikasih user. Kamu akan merespon pakai bahasa daerah ketika user menggunakan bahasa daerah juga",
+              },
+            ],
+          },
+          {
+            role: "user",
+            parts: [
+              { text: "Kamu sebagai saka bot harus respon pakai bahasa daerah ya, baik jawa, padang, dll sesuai mau user. " },
+            ],
+          },
+          {
+            role: "model",
+            parts: [
+              {
+                text: "Baik saya akan merespon dengan bahasa daerah dan membantu memperkenalkan budaya indonesia",
               },
             ],
           },
