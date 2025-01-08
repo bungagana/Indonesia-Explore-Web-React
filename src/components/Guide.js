@@ -15,13 +15,12 @@ function Guide() {
 
   return (
     <div className="guide-container">
-      <h1>Panduan RupaNusantara</h1>
-      <p>RupaNusantara adalah nama yang menggambarkan wajah dan keanekaragaman budaya, sejarah, serta identitas bangsa Indonesia. Melalui website ini, pengunjung diajak menjelajahi kekayaan dan warisan Indonesia, mulai dari perjuangan kemerdekaan hingga keindahan budaya yang tersebar di seluruh Nusantara. Dengan fitur seperti eksplorasi 3D, alur kemerdekaan, dan artikel sejarah, RupaNusantara menjadi cermin yang menampilkan kekayaan warisan dan jati diri bangsa Indonesia.</p>
+      <h1>Panduan IndPlore</h1>
+      <p>IndPlore adalah nama yang menggambarkan wajah dan keanekaragaman budaya, sejarah, serta identitas bangsa Indonesia. Melalui website ini, pengunjung diajak menjelajahi kekayaan dan warisan Indonesia, mulai dari perjuangan kemerdekaan hingga keindahan budaya yang tersebar di seluruh Nusantara. Dengan fitur seperti eksplorasi 3D, alur kemerdekaan, dan artikel sejarah, IndPlore menjadi cermin yang menampilkan kekayaan warisan dan jati diri bangsa Indonesia.</p>
 
       <section className="developer-info">
         <h2>Pengembang</h2>
         <p>Website ini dikembangkan oleh: <strong>Bunga Laelatul Muna</strong></p>
-        <p>Email: <a href="mailto:bungamagelang57@gmail.com">bungamagelang57@gmail.com</a></p>
         <p>Instagram: <a href="https://www.instagram.com/bun_gana/" target="_blank" rel="noopener noreferrer">bun_gana</a></p>
       </section>
 
