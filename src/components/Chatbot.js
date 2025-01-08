@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import './css/Chatbot.css';
 
-const apiKey = 'AIzaSyClO51g8pLssQ2tS22bo70ZO05m3tA1qPU';
+const apiKey = 'AIzaSyAqAd6pgpEtgvR-Kvyf_nOUvyX47ArLWPQ';
 
 const SoekarndoBot = () => {
   const [isOpen, setIsOpen] = useState(false);
